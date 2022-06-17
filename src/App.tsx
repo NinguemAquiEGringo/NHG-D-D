@@ -1,7 +1,8 @@
 import React from 'react';
 import { Content } from './components/Content';
+import './app.scss';
 
-export function App() {
+export default function App() {
   return (
     <div>
       <Content />
