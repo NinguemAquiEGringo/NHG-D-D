@@ -15,6 +15,9 @@ export function Header({ headerClass }: IHeaderParameters) {
       <Link to="/charts">
         <Button content="View All charts" buttonClass="classeDoBotao" />
       </Link>
+      <Link to="/test">
+        <Button content="Página de teste" buttonClass="classeDoBotao" />
+      </Link>
     </div>
   );
 }
