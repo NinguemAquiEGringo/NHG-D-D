@@ -1,15 +1,37 @@
 import React from 'react';
-import '../styles/CreateChart.scss';
+import '../styles/TestStyle.scss';
 
 export default function TestStyle() {
   return (
     <div className="page">
       <h1>Todos os estilos do site:</h1>
-      <input
-        className="button-t1"
-        placeholder="nome  do personagem"
-        type="text"
-      />
+      <label htmlFor="box-1" className="label-line">
+        <p>Nome do personagem</p>
+        <input id="box-1" placeholder="nome  do personagem" type="text" />
+      </label>
+      <div className="box-atribute">
+        <div className="atr-1">
+          <p>+3</p>
+          <input type="text" />
+        </div>
+        <div className="atr-2">
+          <div className="line">
+            <input type="checkbox" />
+            <input type="number" />
+            <input placeholder="proteção" type="text" />
+          </div>
+          <div className="line">
+            <input type="checkbox" />
+            <input type="number" />
+            <input placeholder="furtividade" type="text" />
+          </div>
+          <div className="line">
+            <input type="checkbox" />
+            <input type="number" />
+            <input placeholder="atletismo" type="text" />
+          </div>
+        </div>
+      </div>
       <div className="box-1">
         <h1>Titulo da box</h1>
         <p>
