@@ -1,9 +1,9 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
-import { Home } from '../pages/Home';
-import { CreateChart } from '../pages/CreateChart';
-import { ChartsList } from '../pages/ChartsList';
-import TestStyle from '../pages/TestStyle';
+import { Home } from '../../pages/Home';
+import { CreateChart } from '../../pages/CreateChart';
+import { ChartsList } from '../../pages/ChartsList';
+import TestStyle from '../../pages/TestStyle';
 
 export function Content() {
   return (
