@@ -1,11 +1,18 @@
 import React from 'react';
 import { Header } from '../../components/Header';
+import CreatePageBox1 from '../../components/CreatePageBox1/index';
+import CreatePageBox2 from '../../components/CreatePageBox2';
+import './style.scss';
 
 export function CreateChart() {
   return (
-    <div>
-      <h1>CreateChart</h1>
+    <>
       <Header headerClass="headercoisa" />
-    </div>
+      <div className="main-page">
+        <CreatePageBox1 />
+        <CreatePageBox2 />
+      </div>
+    </>
+
   );
 }

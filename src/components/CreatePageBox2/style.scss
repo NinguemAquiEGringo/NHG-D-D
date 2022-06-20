@@ -1,0 +1,52 @@
+$nord-dark-1: #2e3440;
+$nord-dark-2: #3b4252;
+$nord-dark-3: #434c5e;
+$nord-dark-4: #4c566a;
+
+$nord-light-1: #d8dee9;
+$nord-light-2: #e5e9f0;
+$nord-light-3: #eceff4;
+$nord-light-4: #8fbcbb;
+
+@mixin disp($x, $y, $z) {
+  display: flex;
+  align-items: center;
+  justify-content: $x;
+  flex-flow: $y $z;
+}
+
+.create-chart-page {
+  @include disp(space-evenly, column, nowrap);
+
+  input {
+    border: 2px solid $nord-dark-1;
+    border-radius: 4px;
+    font-size: 30px;
+    font-weight: 600;
+    height: 90px;
+    width: 90px;
+    text-align: center;
+  }
+
+  .box-1 {
+    @include disp(space-evenly, row, nowrap);
+    margin: 30px;
+    width: 50%;
+  }
+
+  .box-2 {
+    @include disp(space-evenly, row, wrap);
+    margin: 30px;
+    width: 50%;
+  }
+
+  .box-3 {
+    @include disp(space-evenly, column, nowrap);
+    border: 3px solid black;
+
+    .line-box-3 {
+      border: 3px solid red;
+      width: 100%;
+    }
+  }
+}

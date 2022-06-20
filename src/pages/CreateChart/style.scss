@@ -1,0 +1,170 @@
+$nord-dark-1: #2e3440;
+$nord-dark-2: #3b4252;
+$nord-dark-3: #434c5e;
+$nord-dark-4: #4c566a;
+
+$nord-light-1: #d8dee9;
+$nord-light-2: #e5e9f0;
+$nord-light-3: #eceff4;
+$nord-light-4: #8fbcbb;
+
+.page-create-chart {
+  padding: 10%;
+
+  .split-chart-1 {
+    border: 3px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    .box-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      flex-flow: row wrap;
+      width: 50%;
+    }
+    
+    .split-box-1 {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      width: 100%;
+    }
+    
+    .header-label-line {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-flow: column-reverse nowrap;
+    
+      p {
+        font-size: 14px;
+      }
+      
+      input {
+        background-color: transparent;
+        border: none;
+        text-align: center;
+        border-bottom: 1px solid $nord-dark-4;
+        height: 40px;
+        padding-left: 5px;
+        outline: none;
+        font-size: 16px;
+        font-weight: 600;
+        &::placeholder {
+          text-align: center;
+          opacity: 40%;
+          font-size: 10px;
+        }
+      }
+    }
+  }
+
+  .main-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-flow: column nowrap;
+    width: 100%;
+
+    .label-skill {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-flow: row nowrap;
+    
+      p {
+        font-size: 16px;
+        width: 100%;
+      }
+      
+      input {
+        border: 1px solid $nord-dark-4;
+        height: 40px;
+        padding-left: 5px;
+        border-radius: 4px;
+        outline: none;
+        font-size: 16px;
+        background-color: $nord-light-1;
+        font-weight: 600;
+        width: 90%;
+        &::placeholder {
+          color: $nord-dark-1;
+          opacity: 40%;
+          font-size: 16px;
+        }
+      }
+    }
+
+    .label-skill-check {
+      border: 3px solid black;
+      display: flex;
+      align-items: center;
+      padding: 20px;
+      justify-content: center;
+      flex-flow: row nowrap;
+    
+      .atr-1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: column-reverse nowrap;
+        p {
+          font-size: 22px;
+        }
+        input {
+          outline: none;
+          border-radius: 8px;
+          text-align: center;
+          font-size: 40px;
+          height: 100px;
+          width: 100px;
+        }
+      }
+    
+      .atr-2 {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-flow: column nowrap;
+    
+        .line {
+          input[type='checkbox'] {
+            width: 20%;
+          }
+    
+          input[type='number'] {
+            background-color: transparent;
+            border-bottom: 3px solid black;
+            font-size: 20px;
+            font-weight: 600;
+            text-align: center;
+            border: none;
+            border-bottom: 5px solid black;
+            outline: none;
+            width: 20%;
+          }
+    
+          input[type='text'] {
+            background-color: transparent;
+            border: none;
+            border-bottom: 1px solid black;
+            height: 30px;
+            padding-left: 10px;
+            color: black;
+            outline: none;
+            width: 40%;
+            &::placeholder {
+              color: white;
+              text-align: center;
+              opacity: 20%;
+            }
+          }
+        }
+      }
+    }
+
+  }
+}
+

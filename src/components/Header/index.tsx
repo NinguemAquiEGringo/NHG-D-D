@@ -1,22 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { IHeaderParameters } from '../../@types';
-import { Button } from '../Button';
 
 export function Header({ headerClass }: IHeaderParameters) {
   return (
     <div className={headerClass}>
       <Link to="/">
-        <Button content="Home" buttonClass="classeDoBotao" />
+        <button type="button">Home</button>
       </Link>
       <Link to="/create">
-        <Button content="Create new Character" buttonClass="classeDoBotao" />
+        <button type="button">Create new Character</button>
       </Link>
       <Link to="/charts">
-        <Button content="View All charts" buttonClass="classeDoBotao" />
-      </Link>
-      <Link to="/test">
-        <Button content="Página de teste" buttonClass="classeDoBotao" />
+        <button type="button">View All charts</button>
       </Link>
     </div>
   );

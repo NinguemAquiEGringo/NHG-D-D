@@ -1,0 +1,19 @@
+.atributebox {
+  border: 3px solid black;
+  border-radius: 8px;
+  display: flex;
+  margin: 15px;
+  justify-content: space-evenly;
+  flex-flow: column nowrap;
+  align-items: center;
+  height: 200px;
+  width: 200px;
+
+  input {
+    border-radius: 8px;
+    text-align: center;
+    font-size: 36px;
+    height: 100px;
+    width: 100px;
+  }
+}
